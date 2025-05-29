@@ -252,18 +252,13 @@ var render = function() {
                         [
                           _c("input", {
                             staticClass: "custom-control-input",
-                            attrs: {
-                              type: "checkbox",
-                              "aria-label": _vm.$translate(
-                                "Ceres::Template.privacySettings"
-                              )
-                            },
+                            attrs: { type: "checkbox" },
                             domProps: {
                               checked: _vm.isConsented(consentGroup.key + ".*")
                             }
                           }),
                           _vm._v(" "),
-                          _c("span", { staticClass: "custom-control-label" })
+                          _c("label", { staticClass: "custom-control-label" })
                         ]
                       )
                     : _c(
